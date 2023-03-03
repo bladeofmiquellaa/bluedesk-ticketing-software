@@ -2,7 +2,7 @@
 
 An app for Answering Tickets.
 
-![Alt text](/public/images/screen.png "LaraGigs")
+![Alt text](/public/images/screen.png "BlueDesk")
 
 ## Usage
 
@@ -28,6 +28,21 @@ Upload the files to your document root, Valet folder or run
 ```
 php artisan serve
 ```
+
+### Getting User Access Key
+Signup and copy the user access key
+
+![Alt text](/public/images/User_Access_Key.png "BlueDesk")
+
+### Getting Token For Your Customer
+Send request including user access key and your customer email to Api to Get a Token for a customer
+
+
+api => 127.0.0.1:8000/api/tokens/generate
+
+Now, your customer can access his panel through this link and see his/her previous ticket or open a ticket
+
+127.0.0.1:8000/tickets/{token_body}
 
 ## License
 
